@@ -1,10 +1,15 @@
 # Proyecto-final
 #Resumen del proyecto
+
 El proyecto consiste en crear un prototipo que ayude a la sanitización de la silla de dentistas para tener el área de trabajo lo más limpia posible.
 La idea es crear un aparato que desinfecte el área designada apoyándose en algunos sensores para lograr el mejor trabajo, usando un sensor de humedad para apoyarme con la cantidad de sanitizante que se esta usando y con eso regular la aplicación del mismo tratando de crear un aparato que sea de lo mas sencillo, para que sea de fácil operación.
+
 #Introducción
+
 #Motivación
+
 Con lo mal que nos está afectando la pandemia la necesidad de aumentar las medidas de higiene son cada vez más alta para evitar su propagación, de aquí surgió mi idea de crear un aparato que ayude y pueda garantizar que el área donde se use este lo más desinfectada posible.
+
 #Objetivo
 Crear un aparto que pueda desinfectar un área designada y garantice un cierto nivel de desinfección, manteniendo su funcionamiento lo mas sencillo posible para que su uso sea de lo más sencillo.
 
