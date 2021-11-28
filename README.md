@@ -83,12 +83,16 @@ Este componente es el más sencillo su conexión es simple una parte se manda a 
 
 
 Resultados
-Problemas encontrados
+#Problemas encontrados
+
 •	Mi idea original era agregar un componente i2c para implementar el uso de un teclado matricial de 4x4 para darle mayor utilidad al proyecto, pero no pude hacer funcionar el i2c por lo cual opté por el uso de un push button de 2 pines para meter la interrupción con ese componente.
 •	El mayor problema que tuve es que mi ESP32 no tiene los pines soldados por lo cual al momento de trabajar con ella es muy incomodo e impráctico ya que requiere que yo haga el contacto con los pines de forma manual.
+
 •	Para la implantación del reloj tuve problemas con la pila que viene, pero eso se soluciono de manera muy sencilla al cambiar la pila, la otra dificultad fue implementar el uso de este componente en el programa.
-Resultados obtenidos
+
+#Resultados obtenidos
 El prototipo no funciona de la manera que yo esperaba por los problemas con los pines por lo cual opte por mostrar videos de los componentes funcionando de manera individual y mostrar un poco el como funcionaria todos los componentes en conjunto.
-Conclusiones
+
+#Conclusiones
 El trabajar a fondo en todo este mundo me gusto demasiado, aprendí mucho a lo largo del curso cosas como el leer las librerías que uso y checar su funcionamiento, así como el como buscar, implementar y mejorar el uso de estas con ayuda de programación avanzada en C.
 Aun estoy lejos de dominar esta área, pero con lo visto en este curso tengo las herramientas necesarias para seguir aprendiendo.
