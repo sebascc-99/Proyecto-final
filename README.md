@@ -46,20 +46,20 @@ Este es el diagrama de mi terminal ESP32:
 ![image](https://user-images.githubusercontent.com/80295696/143788606-a5d13620-012f-4934-acc0-8fc87f158ab6.png)
 
  
-Mande la terminal negativa a tierra y la positiva directamente a la fuente de poder a 3.3v mientras que la salida de datos lo mande al puerto 12 de la ESP32.
+Mande la terminal negativa a tierra y la positiva directamente a la fuente de poder a 3.3v mientras que la salida de datos lo mande al puerto 13 de la ESP32.
 
 Bomba de Agua 6v:
 
 ![image](https://user-images.githubusercontent.com/80295696/143788617-16f109e2-459d-48f7-8741-6391bdab9b97.png)
 
  
-Solo cuenta con dos conexiones la negativa la mande a tierra en la protoboard y la parte positiva al puerto 14 en la ESP32.
+Solo cuenta con dos conexiones la negativa la mande a tierra en la protoboard y la parte positiva al puerto 17 en la ESP32.
 Reloj de tiempo real RTC DS1302:
 
 ![image](https://user-images.githubusercontent.com/80295696/143788627-b398a4a8-0185-4b75-9d66-4cb0a7845d30.png)
 
  
-Este componente es el que más salidas tiene, como es obvio mande la salida de GND y de VCC a la parte negativa y positiva de mi protoboard mientras la salida CLK la mande al puerto 34, la salida DAT al puerto 35 y la salida RST al puerto 37 de la ESP32.
+Este componente es el que más salidas tiene, como es obvio mande la salida de GND y de VCC a la parte negativa y positiva de mi protoboard mientras la salida CLK la mande al puerto 14, la salida DAT al puerto 12 y la salida RST al puerto 27 de la ESP32.
 
 
 
@@ -73,14 +73,13 @@ Este componente es el más sencillo su conexión es simple una parte se manda a 
 
 #Evidencias
 
+![20211128_181652](https://user-images.githubusercontent.com/80295696/143795130-a82bba65-b4c5-43fd-85fb-f5cca1d23932.jpg)
 
 
+![20211128_172500](https://user-images.githubusercontent.com/80295696/143795183-c7898085-b2df-431b-ba3e-97aa188f5c11.jpg)
 
 
-
-
-
-
+![20211128_160249](https://user-images.githubusercontent.com/80295696/143795198-3c067964-3734-423f-a063-7e446b9327bb.jpg)
 
 
 
