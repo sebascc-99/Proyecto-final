@@ -24,7 +24,9 @@ Estos son los componentes que utilice:
 •	PushButton
 •	Protoboard
 •	ESP32
- 
+•	Relevador 12v
+
+
 Uso esta fuente para alimentar todo mi circuito usando el puerto de tierra y los voltajes de 3.3v para el sensor DHT11 y el de 5v para el resto del circuito.
 Quedando de la siguiente manera:
 
@@ -48,7 +50,14 @@ Este es el diagrama de mi terminal ESP32:
  
 Mande la terminal negativa a tierra y la positiva directamente a la fuente de poder a 3.3v mientras que la salida de datos lo mande al puerto 13 de la ESP32.
 
-Bomba de Agua 6v:
+#Relevador
+
+![image](https://user-images.githubusercontent.com/80295696/144295638-7c36c187-3800-497a-9000-bc5feca70730.png)
+
+Su conexión es sencilla la parte del relevador envíe a la parte común la terminal negativa de la bomba y la parte del nodo abierto la mande a la parte negativa de la fuente.
+De las 3 salidas que tiene envíe el voltaje a 3v, GND lo envíe a tierra y la salida in la envíe al puerto 33.
+
+#Bomba de Agua 6v:
 
 ![image](https://user-images.githubusercontent.com/80295696/143788617-16f109e2-459d-48f7-8741-6391bdab9b97.png)
 
@@ -63,12 +72,6 @@ Este componente es el que más salidas tiene, como es obvio mande la salida de G
 
 
 
-Push Button:
-
-![image](https://user-images.githubusercontent.com/80295696/143788643-84e1dca4-772d-4fa7-a163-2a23de574880.png)
-
- 
-Este componente es el más sencillo su conexión es simple una parte se manda a tierra y la otra al puerto 36 en la ESP32.
 
 
 #Evidencias
@@ -84,19 +87,35 @@ Este componente es el más sencillo su conexión es simple una parte se manda a 
 
 
 
+https://user-images.githubusercontent.com/80295696/144296318-9cc5bb6d-d397-48b3-bd21-6018714a0492.mp4
 
 
-Resultados
+
+
+#Resultados
+
 #Problemas encontrados
 
-•	Mi idea original era agregar un componente i2c para implementar el uso de un teclado matricial de 4x4 para darle mayor utilidad al proyecto, pero no pude hacer funcionar el i2c por lo cual opté por el uso de un push button de 2 pines para meter la interrupción con ese componente.
-•	El mayor problema que tuve es que mi ESP32 no tiene los pines soldados por lo cual al momento de trabajar con ella es muy incomodo e impráctico ya que requiere que yo haga el contacto con los pines de forma manual.
+•	Mi idea original era agregar un componente i2c para implementar el uso de un teclado matricial de 4x4 para darle mayor utilidad al proyecto, pero no logre hacer funcionar el i2c por lo cual opté por el uso de un push button de 2 pines para meter la interrupción con ese componente.
 
-•	Para la implantación del reloj tuve problemas con la pila que viene, pero eso se soluciono de manera muy sencilla al cambiar la pila, la otra dificultad fue implementar el uso de este componente en el programa.
+•	El mayor problema que enfrente, es que mi ESP32 no tiene los pines soldados por lo cual al momento de trabajar con ella es muy incomodo e impráctico ya que requiere que yo haga el contacto con los pines de forma manual.
+
+•	Para la implantación del reloj tuve problemas con la pila que incluye, pero eso se soluciono de manera muy sencilla al cambiar la pila, la otra dificultad fue implementar el uso de este componente en el programa.
+
+•	El uso de el botón no logre hacerlo funcionar.
+
+•	Me falto poder hacer funcionar el botón con la interrupción para poder encender y apagar la bomba a voluntad.
 
 #Resultados obtenidos
+
 El prototipo no funciona de la manera que yo esperaba por los problemas con los pines por lo cual opte por mostrar videos de los componentes funcionando de manera individual y mostrar un poco el como funcionaria todos los componentes en conjunto.
 
+Lo que logre hacer funcionar es el sensor de humedad, el reloj y la bomba de agua de manera simultánea.
+
 #Conclusiones
+
 El trabajar a fondo en todo este mundo me gusto demasiado, aprendí mucho a lo largo del curso cosas como el leer las librerías que uso y checar su funcionamiento, así como el como buscar, implementar y mejorar el uso de estas con ayuda de programación avanzada en C.
 Aun estoy lejos de dominar esta área, pero con lo visto en este curso tengo las herramientas necesarias para seguir aprendiendo.
+
+
+
